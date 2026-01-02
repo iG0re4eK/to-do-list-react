@@ -1,5 +1,4 @@
 {
-  "homepage": "https://ig0re4ek.github.io/to-do-list-react",
   "name": "to-do-list-react",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.2.0",
