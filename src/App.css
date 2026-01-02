@@ -1,0 +1,8 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: rgb(135, 135, 135);
+  min-height: 100vh;
+  padding: 1rem;
+  box-shadow: 0 0 50px black;
+}

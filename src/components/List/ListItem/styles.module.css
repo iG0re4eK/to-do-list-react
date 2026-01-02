@@ -1,0 +1,64 @@
+.container {
+  background-color: rgb(56, 138, 138);
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  color: white;
+  border-radius: 0.4rem;
+
+  &.disabled {
+    background-color: rgb(39, 84, 103);
+  }
+}
+
+.left-box {
+  display: flex;
+  gap: 0.5rem;
+  overflow: hidden;
+  flex: 1;
+}
+
+.title {
+  text-shadow: 1px 1px 1px black;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 90%;
+
+  &.disabled {
+    text-decoration: line-through;
+    text-shadow: none;
+    color: rgb(197, 197, 197);
+  }
+}
+
+.right-box {
+  display: flex;
+  gap: 1rem;
+
+  &.disabled {
+    display: none;
+  }
+
+  .delete-btn {
+    cursor: pointer;
+    transition: 0.2s ease;
+    height: 1.5rem;
+    padding: 0 0.5rem;
+    border: none;
+    border-radius: 0.4rem;
+
+    &:hover {
+      background-color: rgb(255, 131, 131);
+      color: white;
+      text-shadow: 1px 1px 1px black;
+    }
+
+    &:active {
+      background-color: rgb(200, 82, 82);
+    }
+  }
+}
